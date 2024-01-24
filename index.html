@@ -163,7 +163,7 @@
         <div class="max-w-full mx-auto text-center mb-16">
           <h4 class="font-semibold text-lg text-secondary mb-2">Clients</h4>
           <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Who have worked together with us</h2>
-          <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit saepe odit harum rem quae sunt nam voluptatibus quisquam? Magnam, praesentium!</p>
+          <p class="font-medium text-md text-secondary md:text-lg">At the moment, I have not established any collaboration with anyone.</p>
         </div>
       </div>
 
@@ -248,22 +248,23 @@
           <p class="font-medium text-md text-secondary md:text-lg">You can contact me if you have any questions or the like.</p>
         </div>
       </div>
-      <form>
+      <form id="my-form" method="POST" 
+      action="https://script.google.com/macros/s/AKfycbxNQ65uGff6gpX32O8MsmtApNeL1YHtvCRGddJNfZsvQ1MPADtflsO6W9ibKh0yR_brDA/exec">
         <div class="w-full lg:w-2/3 lg:mx-auto">
           <div class="w-full px-4 mb-8">
             <label for="name" class="name text-base font-bold text-primary">Name</label>
-          <input type="text" id="name" class="w-full bg-zinc-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1">
+          <input type="text" id="name" name="name" class="w-full bg-zinc-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1">
         </div>
         <div class="w-full px-4 mb-8">
           <label for="email" class="email text-base font-bold text-primary">Email</label>
-          <input type="text" id="email" class="w-full bg-zinc-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1">
+          <input type="text" id="email" name="email" class="w-full bg-zinc-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1">
         </div>
         <div class="w-full px-4 mb-8">
           <label for="msg" class="msg text-base font-bold text-primary">Message</label>
-          <textarea type="textarea" id="msg" class="w-full bg-zinc-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1">
+          <textarea type="textarea" id="msg" name="msg" class="w-full bg-zinc-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1">
           </textarea>
           <div class="w-full px-4">
-            <button class="text-base font-semibold text-white bg-primary mt-5 py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-300">Send</button>
+            <button class="btn text-base font-semibold text-white bg-primary mt-5 py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-300">Send</button>
           </div>
         </div>
       </form>
